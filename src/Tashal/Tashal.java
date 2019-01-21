@@ -1767,11 +1767,11 @@ public class Tashal extends javax.swing.JFrame {
             float input;
             input = Float.parseFloat(value.getText());
 
-            float ans1 = (float) (input*274.15);
+            float ans1 = (float) (input+273.15);
             String ans1V = Float.toString(ans1);
             jl1.setText(ans1V+" (K)");
 
-            float ans2 = (float) (input*33.8);
+            float ans2 = (float) ((2*input)-(0.2*input)+32);
             String ans2V = Float.toString(ans2);
             jl7.setText(ans2V+" (℉)");
             
@@ -1783,11 +1783,11 @@ public class Tashal extends javax.swing.JFrame {
             float input;
             input = Float.parseFloat(value.getText());
 
-            float ans1 = (float) (input*-272.15);
+            float ans1 = (float) (input-273.15);
             String ans1V = Float.toString(ans1);
             jl1.setText(ans1V+" (°C)");
 
-            float ans2 = (float) (input*-457.87);
+            float ans2 = (float) ((input*9/5)-459.67);
             String ans2V = Float.toString(ans2);
             jl7.setText(ans2V+" (℉)");
             
@@ -1799,11 +1799,11 @@ public class Tashal extends javax.swing.JFrame {
             float input;
             input = Float.parseFloat(value.getText());
 
-            float ans1 = (float) (input*-17.2222222);
+            float ans1 = (float) ((input-32)/1.8000);
             String ans1V = Float.toString(ans1);
             jl1.setText(ans1V+" (°C)");
 
-            float ans2 = (float) (input*255.927778);
+            float ans2 = (float) ((input+459.67)*5/9);
             String ans2V = Float.toString(ans2);
             jl7.setText(ans2V+" (K)");
             
