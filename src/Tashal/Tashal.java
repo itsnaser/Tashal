@@ -273,7 +273,6 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Nanometre (nm)");
             unit.addItem("Micrometre (um)");
             unit.addItem("Millimeter (mm)");
@@ -289,9 +288,9 @@ public class Tashal extends javax.swing.JFrame {
             unit.addItem("Yard (yd)");
             
             
-    }//GEN-LAST:event_qLengthActionPerformed
+    }                                       
 
-    private void qTempActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qTempActionPerformed
+    private void qTempActionPerformed(java.awt.event.ActionEvent evt) {                                      
 
         if(qTemp.isSelected())
             qMass.setSelected(false);
@@ -320,14 +319,13 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Celsius (°C)");
             unit.addItem("Kelvin (K)");
             unit.addItem("Fahrenheit (℉)");
 
-    }//GEN-LAST:event_qTempActionPerformed
+    }                                     
 
-    private void qMassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qMassActionPerformed
+    private void qMassActionPerformed(java.awt.event.ActionEvent evt) {                                      
 
         if(qMass.isSelected())
             qLength.setSelected(false);
@@ -356,7 +354,6 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Nanogram (ng)");
             unit.addItem("Microgram (ug)");
             unit.addItem("Milligram (mg)");
@@ -369,15 +366,15 @@ public class Tashal extends javax.swing.JFrame {
             unit.addItem("Ton (ton)");
             unit.addItem("Pound (lb)");
             unit.addItem("Ounce (oz)");
-    }//GEN-LAST:event_qMassActionPerformed
+    }                                     
 
     
     
     // C O N V E R T I N G //
-    private void convertBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertBtnActionPerformed
+    private void convertBtnActionPerformed(java.awt.event.ActionEvent evt) {                                           
 
         
-        if ((unit.getSelectedItem().equals("Choose a unit :")) || ((value.getText().equals(""))))
+        if ((unit.getSelectedItem().equals("Choose a unit :")))
         {
             JOptionPane.showMessageDialog(null," You must choose an option"," System",JOptionPane.INFORMATION_MESSAGE);
         }
