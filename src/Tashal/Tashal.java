@@ -273,7 +273,6 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Nanometre (nm)");
             unit.addItem("Micrometre (um)");
             unit.addItem("Millimeter (mm)");
@@ -320,7 +319,6 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Celsius (°C)");
             unit.addItem("Kelvin (K)");
             unit.addItem("Fahrenheit (℉)");
@@ -356,7 +354,6 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
-            unit.addItem("");
             unit.addItem("Nanogram (ng)");
             unit.addItem("Microgram (ug)");
             unit.addItem("Milligram (mg)");
