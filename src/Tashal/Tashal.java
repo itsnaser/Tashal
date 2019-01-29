@@ -273,6 +273,7 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
+            unit.addItem("");
             unit.addItem("Nanometre (nm)");
             unit.addItem("Micrometre (um)");
             unit.addItem("Millimeter (mm)");
@@ -288,9 +289,9 @@ public class Tashal extends javax.swing.JFrame {
             unit.addItem("Yard (yd)");
             
             
-    }                                       
+    }//GEN-LAST:event_qLengthActionPerformed
 
-    private void qTempActionPerformed(java.awt.event.ActionEvent evt) {                                      
+    private void qTempActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qTempActionPerformed
 
         if(qTemp.isSelected())
             qMass.setSelected(false);
@@ -319,13 +320,14 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
+            unit.addItem("");
             unit.addItem("Celsius (°C)");
             unit.addItem("Kelvin (K)");
             unit.addItem("Fahrenheit (℉)");
 
-    }                                     
+    }//GEN-LAST:event_qTempActionPerformed
 
-    private void qMassActionPerformed(java.awt.event.ActionEvent evt) {                                      
+    private void qMassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qMassActionPerformed
 
         if(qMass.isSelected())
             qLength.setSelected(false);
@@ -354,6 +356,7 @@ public class Tashal extends javax.swing.JFrame {
             clearJl();
             unit.removeAllItems();
             unit.addItem("Choose a unit :");
+            unit.addItem("");
             unit.addItem("Nanogram (ng)");
             unit.addItem("Microgram (ug)");
             unit.addItem("Milligram (mg)");
@@ -366,15 +369,15 @@ public class Tashal extends javax.swing.JFrame {
             unit.addItem("Ton (ton)");
             unit.addItem("Pound (lb)");
             unit.addItem("Ounce (oz)");
-    }                                     
+    }//GEN-LAST:event_qMassActionPerformed
 
     
     
     // C O N V E R T I N G //
-    private void convertBtnActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    private void convertBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertBtnActionPerformed
 
         
-        if ((unit.getSelectedItem().equals("Choose a unit :")))
+        if ((unit.getSelectedItem().equals("Choose a unit :")) || ((value.getText().equals(""))))
         {
             JOptionPane.showMessageDialog(null," You must choose an option"," System",JOptionPane.INFORMATION_MESSAGE);
         }
@@ -1164,7 +1167,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -13));
+            float ans10 = (float) (input*Math.pow(10, -15));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1216,7 +1219,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -10));
+            float ans10 = (float) (input*Math.pow(10, -12));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1268,7 +1271,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -7));
+            float ans10 = (float) (input*Math.pow(10, -9));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1320,7 +1323,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -6));
+            float ans10 = (float) (input*Math.pow(10, -8));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1372,7 +1375,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -5));
+            float ans10 = (float) (input*Math.pow(10, -7));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1424,7 +1427,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -4));
+            float ans10 = (float) (input*Math.pow(10, -6));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1476,7 +1479,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -3));
+            float ans10 = (float) (input*Math.pow(10, -5));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1528,7 +1531,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (kg)");
 
-            float ans10 = (float) (input*Math.pow(10, -2));
+            float ans10 = (float) (input*Math.pow(10, -4));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1580,7 +1583,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (hg)");
 
-            float ans10 = (float) (input*Math.pow(10, -1));
+            float ans10 = (float) (input*Math.pow(10, -3));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (ton)");
 
@@ -1600,47 +1603,47 @@ public class Tashal extends javax.swing.JFrame {
             float input;
             input = Float.parseFloat(value.getText());
 
-            float ans2 = (float) (input*Math.pow(10, 13));
+            float ans2 = (float) (input*Math.pow(10, 15));
             String ans2V = Float.toString(ans2);
             jl1.setText(ans2V+" (ng)");
 
-            float ans3 = (float) (input*Math.pow(10, 10));
+            float ans3 = (float) (input*Math.pow(10, 12));
             String ans3V = Float.toString(ans3);
             jl2.setText(ans3V+" (ug)");
 
-            float ans4 = (float) (input*Math.pow(10, 7));
+            float ans4 = (float) (input*Math.pow(10, 9));
             String ans4V = Float.toString(ans4);
             jl3.setText(ans4V+" (mg)");
 
-            float ans5 = (float) (input*Math.pow(10, 6));
+            float ans5 = (float) (input*Math.pow(10, 8));
             String ans5V = Float.toString(ans5);
             jl4.setText(ans5V+" (cg)");
 
-            float ans6 = (float) (input*Math.pow(10, 5));
+            float ans6 = (float) (input*Math.pow(10, 7));
             String ans6V = Float.toString(ans6);
             jl5.setText(ans6V+" (dg)");
 
-            float ans7 = (float) (input*Math.pow(10, 4));
+            float ans7 = (float) (input*Math.pow(10, 6));
             String ans7V = Float.toString(ans7);
             jl6.setText(ans7V+" (g)");
 
-            float ans8 = (float) (input*Math.pow(10, 3));
+            float ans8 = (float) (input*Math.pow(10, 5));
             String ans8V = Float.toString(ans8);
             jl7.setText(ans8V+" (dag)");
 
-            float ans9 = (float) (input*Math.pow(10, 2));
+            float ans9 = (float) (input*Math.pow(10, 4));
             String ans9V = Float.toString(ans9);
             jl8.setText(ans9V+" (hg)");
 
-            float ans10 = (float) (input*Math.pow(10, 1));
+            float ans10 = (float) (input*Math.pow(10, 3));
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (kg)");
 
-            float ans11 = (float) (input*2.20462262*Math.pow(10, 1));
+            float ans11 = (float) (input*2.20462262*Math.pow(10, 3));
             String ans11V = Float.toString(ans11);
             jl10.setText(ans11V+" (lb)");
             
-            float ans1 = (float) (input*3.52739619*Math.pow(10, 2));
+            float ans1 = (float) (input*3.52739619*Math.pow(10, 4));
             String ans1V = Float.toString(ans1);
             jl11.setText(ans1V+" (oz)");
             
@@ -1688,7 +1691,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (kg)");
 
-            float ans11 = (float) (input*453592.37*Math.pow(10, -7));
+            float ans11 = (float) (input*453592.37*Math.pow(10, -9));
             String ans11V = Float.toString(ans11);
             jl10.setText(ans11V+" (ton)");
             
@@ -1740,7 +1743,7 @@ public class Tashal extends javax.swing.JFrame {
             String ans10V = Float.toString(ans10);
             jl9.setText(ans10V+" (kg)");
 
-            float ans11 = (float) (input*28349.5231*Math.pow(10, -7));
+            float ans11 = (float) (input*28349.5231*Math.pow(10, -9));
             String ans11V = Float.toString(ans11);
             jl10.setText(ans11V+" (ton)");
             
